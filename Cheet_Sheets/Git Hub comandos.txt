@@ -86,3 +86,16 @@ Actualizar referencias locales:
 Para asegurarte de que tu repositorio local está sincronizado y reconoce los cambios remotos, puedes realizar lo siguiente:
 git remote prune origin
 git fetch --all
+
+-- Para sincronizar un directorio ya creado en VScode con un repositorio de GitHub:
+- Para solucionarlo, puedes decirle a Git que permita la fusión de estos historiales no relacionados. El comando es:
+git pull origin main --allow-unrelated-histories
+
+- Después de ejecutar ese comando, si todo va bien, tu repositorio local debería estar sincronizado con el remoto y ya podrás hacer git push y git pull con normalidad.
+Para completar la fusión ahora mismo:
+    - Ejecuta git commit manualmente:   git commit
+    - Si falla el commit, usa: git commit -m "Merge branch 'main' of https://github.com/nombre_usuario/nombre_repositorio allowing unrelated histories"
+      (Puedes usar un mensaje más corto si prefieres, como git commit -m "Merge unrelated histories")
+    - Verifica el estado:   git status
+    - Sube los cambios (recomendado):   git push origin main
+
