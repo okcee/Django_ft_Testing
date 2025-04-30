@@ -1,0 +1,24 @@
+# Settings
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
+# Local History for Visual Studio Code
+.history/
+*.app
+.snapshots/*
+
+# Security settings
+*.eve
+**/*.config.ini
+
+# User settings
+**/settings.json
+**/launch.json
+**/tasks.json
+
+# Virtual Enviroments
+.ve*
