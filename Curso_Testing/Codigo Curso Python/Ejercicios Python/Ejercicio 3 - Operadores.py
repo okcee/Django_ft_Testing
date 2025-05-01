@@ -1,2 +1,3 @@
 a = ((3+2)/(2*5))**2
-print('Resultado:', a)
+b = pow((3+2)/(2*5),2) # pow(base, exponente, modulo=None(opcional))
+print('Resultado:', a,"\t", b)
