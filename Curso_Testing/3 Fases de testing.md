@@ -51,4 +51,15 @@ En la fase de ejecución de pruebas, se realizan las siguientes actividades:
     - Personas de referencia en el proyecto. Es importantisimo una buena comunicación entre todos los integrantes.  
     - Seguimiento y reporte de progreso.  
 
-## Fase 6: 
+## Fase 6: Evaluación (Testware)
+En la fase de evaluación se crea un documento con las conclusiones totales y con los resultados obtenidos.  
+El **testware** es el documento con todas las conclusiones e información obtenida en la pruebas, de un test case (prueba única) o el **testware** general con todas las pruebas del proyecto. Los elementos del **testware** son:  
+    - Funciones probadas dentro de la App. Para guiarse y registrar las pruebas realizadas.  
+    - Equipo de testing. Saber desde quien elaboró la documentación, hasta quién realiza cada test case.  
+    - Métricas. Identificación y registrar qué aspectos del proceso de prueba midieron y cómo se hicieron las mediciones.  
+    - Conclusión. Registrar los objetivos cumplidos, lo aprendido, las mejoras que se pueden implementar.  
+
+## Fase 7: Cierre y Mantenimiento
+Todas las partes involucradas, `Stakeholders` (cliente, desarrolladores, líderes del proyecto,patrocinadores, etc) deben de firmar el cierre del proyecto, formalizando la aceptación del proyecto como completado. La firma marca el final formal del desarrollo del proyecto, entrando en la fase de mantenimiento, que es la fase continua de soporte y mejora del producto ya entregado.  
+El mantenimiento debe de ser estipulado, siendo un servicio que se cobra a parte. Por lo que es necesario dejar muy claro las garantías y el mantenimiento posterior al cierre.  
+Si el cliente denuncia un defecto, el servicio de mantenimiento debe de analizar si es un defecto, y liberar al cliente de él encontrando una solución.  
