@@ -1,0 +1,10 @@
+/* Para agregar CSS se necesita una estructura HTML */
+/* Por norma general la raíz del proyecto la compondrían los archivos index.html y style.css */
+/* Para conectarlos::
+- En html: En el head se añade el enlace a la hoja de estilos de esa página.
+    <link rel="stylesheet" href="style.css">
+- En css: Se llama o define el elemento al que se le quiere dar un estilo estético (ej: h1) y, se definen el estilo y sus argumentos.
+    h1{
+        background-color: greem;
+    }
+*/

@@ -1,0 +1,10 @@
+/* Comentario en CSS */
+/* CSS es un lenguaje de hojas de estilos creados para controlar aspecto o presentación de los documentos electrónicos definidos con HTML */
+
+/* Estructura básica de CSS */
+p { /* selector */
+    color: red /* Propiedad: Valor de porpiedad */
+}
+
+/* Herencia en CSS
+Un elemento Hijo, es aquel que se encuentra dentro de otro elemento, Padre, estando entre las etiquetas de este último */
