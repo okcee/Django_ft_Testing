@@ -1,0 +1,51 @@
+1. Instalar la librería de Selenium
+pip install selenium
+pip install selenium webdriver-manager
+
+Si tienes múltiples versiones de Python instaladas, es posible que necesites usar pip3 en lugar de pip:
+pip3 install selenium
+
+2. Instalar el Driver del Navegador (ChromeDriver, por ejemplo)
+Hay dos formas principales de hacer esto:
+Forma 1: Método Recomendado (Automático): Usando webdriver_manager
+    1. Instala webdriver_manager: Abre la terminal de VS Code (si no está abierta) y ejecuta:
+    pip install webdriver-manager       ( pip3 install webdriver-manager )
+    2. Usa webdriver_manager en tu script de Python: En tu código Python, webdriver_manager se encargará de descargar el driver la primera vez que lo ejecutes y lo almacenará en caché.
+
+
+Forma 2: Método Manual: Descargando y configurando la ruta.
+Este método requiere que descargues el ejecutable de ChromeDriver y le digas a Selenium dónde encontrarlo.
+1. Verifica tu versión de Chrome: Abre tu navegador Chrome y escribe chrome://version/ en la barra de direcciones. Anota el número de versión exacto.
+2. Descarga el ChromeDriver compatible:
+    - Ve a la página oficial de descargas de ChromeDriver: https://chromedriver.chromium.org/.
+    - Busca la sección "Downloads". Deberías ver enlaces a las versiones más recientes. Es posible que la página te redirija a la nueva ubicación de descargas de "Chrome for Testing" (que es la iniciativa actual para proporcionar versiones específicas de Chrome y sus drivers para testing). Sigue el enlace que coincida con la versión principal de tu Chrome (por ejemplo, si tu Chrome es v124.x.x.x, busca ChromeDriver para la versión 124).
+    - Descarga el archivo Zip correspondiente a tu sistema operativo (Windows, macOS, Linux).
+3. Extrae el archivo: Descomprime el archivo Zip que descargaste. Encontrarás un archivo ejecutable llamado chromedriver (o chromedriver.exe en Windows).
+4. Coloca el archivo chromedriver: Tienes un par de opciones para que Selenium encuentre el driver:
+    - Opción A (Más sencilla para empezar): Copia el archivo ejecutable chromedriver y pégalo en la misma carpeta donde se encuentra tu script de Python.
+    - Opción B (Más organizada): Crea una carpeta específica en tu sistema para guardar los drivers (por ejemplo, C:\WebDriver\bin en Windows, o /Users/tu_usuario/WebDriver/bin en macOS/Linux). Pega el archivo chromedriver allí.
+    - Opción C (Configuración avanzada): Agrega la carpeta donde colocaste chromedriver a la variable de entorno PATH de tu sistema operativo. Esto permite que Selenium lo encuentre sin especificar la ruta completa, pero es un paso más complejo de configurar a nivel del sistema operativo. Para empezar, las Opciones A o B son suficientes.
+
+Usa el driver en tu script de Python:
+```Python
+from selenium import webdriver
+from selenium.webdriver.chrome.service import Service
+
+# Especifica la ruta COMPLETA al ejecutable de ChromeDriver
+# ¡Reemplaza esto con la ruta real en tu sistema!
+driver_path = '/ruta/completa/a/tu/carpeta/chromedriver' # Ejemplo para Linux/macOS
+# driver_path = 'C:\\ruta\\completa\\a\\tu\\carpeta\\chromedriver.exe' # Ejemplo para Windows (usa doble barra inversa o una barra normal)
+
+
+service = Service(driver_path)
+
+driver = webdriver.Chrome(service=service)
+
+# Ahora puedes usar 'driver'
+driver.get("[https://www.google.com](https://www.google.com)")
+
+# ...
+
+driver.quit()
+```
+---
