@@ -1,16 +1,3 @@
-''' Ejercicios 4.1
-Crear un programa que pida al usuario una letra, y si es vocal, muestre el mensaje "Es vocal". Sino, decirle al usuario que no es vocal
-'''
-letra = input('Introduce una letra: ')
-# if letra in 'aeiou':
-#     print(f"La letra '{letra}' es una vocal.")
-# else:
-#     print(f"La letra '{letra}' no es una vocal.")
-
-'''Explicación de la lista de comprensión:
-[ ... for ... in ... if ... else ... ]: Esta es la estructura general de una lista de comprensión con una condición if-else.'''
-print(f"La letra '{letra}' es una vocal." if letra in 'aeiou' else f"La letra '{letra}' no es una vocal.")
-
 '''Ejercicio 4.2
 Escribe un programa que pida dos palabras y diga si riman o no. Si coinciden las tres últimas letras tiene que decir que riman. Si coinciden sólo las dos últimas tiene que decir que riman un poco y si no, que no riman.
 '''
