@@ -19,7 +19,7 @@ Valor de retorno:
     - Devuelve False en caso contrario
 '''
 class ErrorDeTipoPotencia(ValueError): # Excepción personalizada para errores de tipo
-    pass
+    pass # Otros ejemplos de excepciones builtin son TypeError, IndexError, KeyError, FileNotFoundError
 
 class Potencia: # Clase Potencia (Calcula la potencia de un número)
     def __init__ (self, x, n): # Se aceptan x y n como argumentos directos
