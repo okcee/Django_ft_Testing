@@ -1,0 +1,5 @@
+pip install django django-ckeditor Pillow pylint pylint-django
+
+comando iniciar proyecto
+python -m django startproject webpersonal
+
