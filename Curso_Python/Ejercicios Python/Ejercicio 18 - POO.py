@@ -8,7 +8,7 @@ Escribir una clase que se llame Areas(). A partir de un constructor se deben pas
     Para un pentágono regular con longitud de lado l, el perímetro P es 5*l.
     La apotema a se puede calcular mediante la fórmula: a = l / (2*tan(π/5)) o aprox. a≈l*0.688
 '''
-from math import pi
+from math import pi, tan
 
 class Areas:
     def __init__ (self, base, altura):
@@ -21,15 +21,21 @@ class Areas:
     def triangulo (self):
         return (self.base * self.altura)/2
     
-    def pentagono (self, a):
-        a =  self.base / (2*tan(pi/5)) # pendiente saber como se hace la tangente
-        return ((5 * self.base) * a ) / 2
+    def pentagono (self):
+        lado = self.base
+        apotema =  lado / (2*tan(pi/5))
+        return ((5 * lado) * apotema ) / 2
     
     def __str__ (self):
-        res_cuadrado = self.cuadrado
-        res_triangulo = self.triangulo
-        res_pentagono = self.pentagono
-        
-        return (f'Resultados para los valores de base {self.base} y altura {self.altura}:\n"'
-                
-                )
+        res_cuadrado = self.cuadrado()
+        res_triangulo = self.triangulo()
+        res_pentagono = self.pentagono()
+        output_lines = [
+            f'Resultados para los valores de base = {self.base} y altura = {self.altura}:',
+            f'  - El área de un cuadrado (lado = {self.base}) es: {res_cuadrado}',
+            f'  - El área de un triángulo (base = {self.base}, altura={self.altura}) es: {res_triangulo}',
+            f'  - El área de un pentágono regular (lado= {self.base}) es: {res_pentagono}'
+        ]
+        return "\n".join(output_lines)
+
+print(Areas(10, 15))
