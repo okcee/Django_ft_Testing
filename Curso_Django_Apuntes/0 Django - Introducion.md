@@ -54,19 +54,19 @@ Estos archivos constituyen la estructura básica para comenzar a construir una a
 
 1. `manage.py:`  
     - Qué es: Un script de línea de comandos.  
-    - Para qué vale: Es la utilidad principal para interactuar con tu proyecto Django. Lo usas para ejecutar comandos como runserver (iniciar el servidor de desarrollo), makemigrations, migrate (gestionar la base de datos), createsuperuser, startapp (crear nuevas aplicaciones), etc. Es tu punto de entrada para muchas operaciones de desarrollo y administración.  
+    - Para qué vale: Es la utilidad principal para interactuar con tu proyecto Django. Lo usas para ejecutar comandos como `runserver` (iniciar el servidor de desarrollo), `makemigrations`, `migrate` (gestionar la base de datos), `createsuperuser`, `startapp` (crear nuevas aplicaciones), etc. Es tu punto de entrada para muchas operaciones de desarrollo y administración.  
 2. `<nombre_proyecto>/__init__.py:`  
     - Qué es: Un archivo vacío (por defecto).  
-    - Para qué vale: Indica a Python que este directorio (<nombre_proyecto>/) debe ser considerado un paquete Python.
+    - Para qué vale: Indica a Python que este directorio (`<nombre_proyecto>/`) debe ser considerado un paquete Python.
 3. `<nombre_proyecto>/asgi.py:`  
    - Qué es: Un archivo de configuración para servidores ASGI (Asynchronous Server Gateway Interface).
-   - Para qué vale: Define el punto de entrada para servidores web asíncronos (como Daphne o Uvicorn) para servir tu proyecto. Es necesario si planeas usar funcionalidades asíncronas como WebSockets o vistas async/await (disponibles en versiones recientes de Django).
+   - Para qué vale: Define el punto de entrada para servidores web asíncronos (como Daphne o Uvicorn) para servir tu proyecto. Es necesario si planeas usar funcionalidades asíncronas como WebSockets o vistas `async`/`await` (disponibles en versiones recientes de Django).
 4. `<nombre_proyecto>/settings.py:`  
    - Qué es: El archivo de configuración principal de tu proyecto.
-   - Para qué vale: Contiene todas las configuraciones del proyecto: la configuración de la base de datos (DATABASES), la lista de aplicaciones instaladas (INSTALLED_APPS), la clave secreta (SECRET_KEY), la configuración de archivos estáticos y multimedia, plantillas, middleware, zonas horarias, etc. Es el centro neurálgico de la configuración de tu proyecto.
+   - Para qué vale: Contiene todas las configuraciones del proyecto: la configuración de la base de datos (`DATABASES`), la lista de aplicaciones instaladas (`INSTALLED_APPS`), la clave secreta (`SECRET_KEY`), la configuración de archivos estáticos y multimedia, plantillas, middleware, zonas horarias, etc. Es el centro neurálgico de la configuración de tu proyecto.
 5. `<nombre_proyecto>/urls.py:`  
    - Qué es: El archivo de configuración de URLs raíz del proyecto.
-   - Para qué vale: Define los patrones de URL a nivel de proyecto. Generalmente, incluye URLs para las apps instaladas (usando include()) y URLs a nivel global (como el admin). Es donde se mapean las URLs entrantes a las vistas correspondientes.
+   - Para qué vale: Define los patrones de URL a nivel de proyecto. Generalmente, incluye URLs para las apps instaladas (usando `include()`) y URLs a nivel global (como el admin). Es donde se mapean las URLs entrantes a las vistas correspondientes.
 6. `<nombre_proyecto>/wsgi.py:`
    - Qué es: Un archivo de configuración para servidores WSGI (Web Server Gateway Interface).
    - Para qué vale: Define el punto de entrada para servidores web síncronos compatibles con WSGI (el estándar tradicional para servir aplicaciones web Python, como Gunicorn o uWSGI) para servir tu proyecto. Es el archivo que los servidores web usan para comunicarse con tu aplicación Django.
