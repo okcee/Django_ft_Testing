@@ -1,3 +1,19 @@
+'''
+Script para seguir usando la terminal desde el directorio raíz para el manejo de comandos de manage.py
+
+En vez de tener que abrir una terminal desde el directorio donte se aloja manage.py y escribir:
+python manage.py *comando
+
+O escribir el comando con el directorio entero
+python "S:\_Django_ft_Testing\Django_Web_Personal\webpersonal\manage.py" *comando
+
+Escribiremos:
+python manejo_proyecto.py *comando
+Por ejemplo:    python manejo_proyecto.py runserver
+De esta manera, ya se encarga el script de enlazar con el directorio de manage.py
+'''
+
+
 import os
 import sys
 import subprocess
