@@ -15,19 +15,10 @@ def home(request):
     return render(request, "core/home.html")
 
 def about(request):
-    return HttpResponse(html_base + """
-        <h2>Acerca de</h2>
-        <p>Me llamo Héctor y me encanta Django!</p>
-    """)
+    return HttpResponse(request, "core/about.html")
 
 def portfolio(request):
-    return HttpResponse(html_base + """
-        <h2>Portafolio</h2>
-        <p>Este es el Portafolio</p>
-    """)
+    return HttpResponse(request, "core/portfolio.html")
 
 def contact(request):
-    return HttpResponse(html_base + """
-        <h2>Contacto</h2>
-        <p>Estos son los datos de contacto: <a href="mailto:"abc@google.com">email de contacto</a></p>
-    """)
+    return HttpResponse(request, "core/contact.html")
