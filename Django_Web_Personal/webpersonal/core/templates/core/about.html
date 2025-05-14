@@ -1,12 +1,9 @@
-<h1>Mi Web Personal</h1>
+{% extends 'core/base.html' %} <!-- Ruta al template que vamos a extender -->
 
-<ul>
-    <li><a href="/">Portada</a></li>
-    <li><a href="/about/">Acerca de</a></li>
-    <li><a href="/portfolio/">Portafolio</a></li>
-    <li><a href="/contact/">Contacto</a></li>
-</ul>
+{% block title %}About{% endblock %}
 
+{% block content %}
 <h2>Acerca de</h2>
 
 <p>Me llamo Héctor y me encanta Django!</p>
+{% endblock %}
