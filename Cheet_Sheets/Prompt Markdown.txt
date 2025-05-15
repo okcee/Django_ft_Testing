@@ -1,3 +1,13 @@
+
+Crea un archivo en formato markdown (.md) con información de manera clara y concisa, de lo que es Template tag Url, su funcionamiento y su sintaxis completa.
+**REQUISITOS IMPORTANTES:**
+- Usa un **único bloque de código Markdown completo**, comenzando con 
+`markdown y cerrando con el mismo.
+- Todo el contenido debe estar **dentro del mismo bloque**, incluyendo explicaciones, fragmentos de código y etiquetas HTML si las hay.
+- Usa sintaxis Markdown estándar y legible.
+- Para código Python, HTML o similar, usa bloques de código bien cerrados con triple acento grave (```) dentro del bloque principal.
+- Si hay fórmulas matemáticas, utiliza notación LaTeX con el símbolo `$`.
+
 FORMATO 1
 
 Información básica de lo que es, su funcionamiento y su sintaxis completa, de manera clara y concisa en formato **Markdown puro**, específicamente diseñado para ser copiado y pegado directamente en un archivo Markdown.
