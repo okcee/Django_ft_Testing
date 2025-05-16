@@ -1,5 +1,5 @@
 
-Crea un archivo en formato markdown (.md) con información de manera clara y concisa, de lo que es Template tag Url, su funcionamiento y su sintaxis completa.
+Crea un archivo en formato markdown (.md) con información de manera clara y concisa, de lo que es ..., su funcionamiento y su sintaxis completa.
 **REQUISITOS IMPORTANTES:**
 - Usa un **único bloque de código Markdown completo**, comenzando con 
 `markdown y cerrando con el mismo.
