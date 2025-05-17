@@ -15,8 +15,8 @@ De esta manera, ya se encarga el script de enlazar con el directorio de manage.p
 
 
 import os
-import sys
 import subprocess
+import sys
 
 DJANGO_PROJECT_DIR = r"S:\_Django_ft_Testing\Django_Web_Personal\webpersonal"
 MANAGE_PY_SCRIPT_NAME = "manage.py" # Nombre del script de Django
@@ -74,4 +74,3 @@ if __name__ == "__main__":
 
     django_command_and_args = sys.argv[1:] # Todos los argumentos después del nombre del script
     run_django_command(django_command_and_args)
-
