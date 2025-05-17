@@ -1,7 +1,7 @@
 ## Prompt para apreder de los vídeos de Udemy simplificándolos.
 
 
-1. Crea un archivo en formato markdown (.md) con el resumen de los puntos importantes de lo que se explica con ejemplos en ...las trancripciones de videos de un curso de Django..., de manera clara y concisa, centrándote únicamente en los puntos importantes de en la explicación del su funcionamiento y su sintaxis completa y omitiendo el ejercio de ejmplo. Es decir, filtra la información, para explicar lo que hay que aprender.
+1. Crea un archivo en formato markdown (.md) con el resumen de los puntos importantes de lo que se explica con ejemplos en ...las trancripciones de videos de un curso de Django..., de manera clara y concisa, centrándote únicamente en los puntos importantes de en la explicación del su funcionamiento y su sintaxis completa y omitiendo el ejercio de ejemplo. Es decir, filtra la información, para explicar lo que hay que aprender.
 
 2. Pasos que debes de seguir:
 - Analizar la información proporcionada.
