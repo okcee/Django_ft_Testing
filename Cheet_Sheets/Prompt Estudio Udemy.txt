@@ -24,3 +24,5 @@
 - "Lenguaje claro."
 - "Estructura lógica (introducción, desarrollo, cierre)."
 - "Evitar juicios personales u opiniones."
+
+7. La información te la iré dando a continuación, en las siguientes interacciones
